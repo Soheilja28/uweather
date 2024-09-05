@@ -124,7 +124,7 @@ export async function getServerSideProps(context) {
     role, path, devmod, userip, } = session;
 
 
-  let json = await (await fetch("https://irmapserver.ir/research/api/weather/")).json()
+  let json = await (await fetch("https://cdn.ituring.ir/research/api/weather/")).json()
   let current_condition = json.current_condition[0]
   let weather = json.weather[0].astronomy[0]
 
